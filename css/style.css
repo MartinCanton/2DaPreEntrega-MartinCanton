@@ -135,7 +135,7 @@ footer p{
 
 
 /* MEDIA QUERIES PANTALLA ANCHA */
-@media (max-width:1200px){
+@media (max-width:1280px){
     #intro {
         width:90% !important;
         margin:auto;
@@ -151,6 +151,20 @@ footer p{
     margin:auto;
     padding-top:10px;    
    }
+
+   #img-mapa {
+    width:100%;
+    height:auto;
+    }
+
+    .grid {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .grid__item1 video {
+    width: 100%;
+    } 
  
 }
 
@@ -165,7 +179,7 @@ footer p{
     #main__prod {
         width:100% !important;
         flex-direction: column;
-    }
+    }    
 
     .prod__fila1 {
         width: 100% !important;
@@ -191,6 +205,7 @@ footer p{
 
     #local {
         flex-wrap: wrap;
+        padding: 0;
     }
     #img-mapa{
         width:100%;
