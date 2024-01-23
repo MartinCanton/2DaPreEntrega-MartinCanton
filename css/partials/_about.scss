@@ -1,0 +1,18 @@
+@import 'variables';
+
+#local {
+    width: 100%;
+    background-color: $primary-color;
+    display:flex;
+    justify-content: center;  
+}
+
+.mapa {
+    height:500px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+}

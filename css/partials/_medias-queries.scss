@@ -1,0 +1,130 @@
+@import 'variables';
+
+/* MEDIA QUERIES PANTALLA ANCHA */
+@media (max-width: 1500px) {
+    #intro {
+        width: 90% !important;
+        margin: auto;
+    }
+    
+    #hero {
+        width: 90% !important;
+    }
+
+    #main__prod {
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    .prod__fila1,
+    .prod__fila2,
+    .prod__fila3,
+    .prod__fila4 {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 10px;
+    }
+    #img-mapa {
+        width:100%;
+        height:auto;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid__item1 video {
+        width: 100%;
+    } 
+}
+
+/* MEDIA QUERIES PANTALLA SM */
+@media (max-width: 768px) {
+    #hero {
+        width: 90% !important;
+    }
+
+    #main__prod {
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    .prod__fila1,
+    .prod__fila2,
+    .prod__fila3,
+    .prod__fila4 {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .wrapper-local {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #local {
+        flex-wrap: wrap;
+    }
+
+    #img-mapa {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid__item1 video {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERIES PANTALLA EXTRA SM*/
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .prod__fila1,
+    .prod__fila2,
+    .prod__fila3,
+    .prod__fila4 {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #local {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #img-mapa {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid__item1 video {
+        width: 100%;
+    }
+}

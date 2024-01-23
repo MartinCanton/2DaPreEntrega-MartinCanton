@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#menu__navbar a {
+  color: #044726;
+}
+#menu__navbar a button {
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+.carousel-inner {
+  max-height: 40rem !important;
+  background-color: #044726;
+}
+
+footer {
+  min-height: 100px;
+}
+footer p {
+  color: #044726;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #044726;
+}
+
+#hero .border-3 {
+  border-top: 2px solid #044726;
+}
+
+#main__prod {
+  background-color: #044726;
+}
+
+.grid {
+  background-color: #044726;
+  display: grid;
+  padding: 6rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "item1 item2" "item1 item3";
+  gap: 2rem;
+}
+
+.grid__item {
+  color: white;
+}
+
+.grid__item1 {
+  grid-area: item1;
+}
+
+.grid__item1 h4 {
+  text-align: center;
+}
+
+.grid__item2 {
+  grid-area: item2;
+}
+
+.grid__item2 h4 {
+  text-align: center;
+}
+
+.grid__item3 {
+  grid-area: item3;
+}
+
+.grid__item3 h4 {
+  text-align: center;
+}
+
+#contenedor-formulario {
+  background-color: #044726;
+  border-radius: 10px;
+}
+
+#titulo-formulario {
+  color: white;
+}
+
+#local {
+  width: 100%;
+  background-color: #044726;
+  display: flex;
+  justify-content: center;
+}
+
+.mapa {
+  height: 500px;
+}
+
+.wrapper-local {
+  width: 50%;
+  margin-left: 100px;
+}
+
+/*** INDEX ***/
+.roll-in-top {
+  animation: roll-in-top 0.6s ease-out both;
+}
+@keyframes roll-in-top {
+  0% {
+    transform: translateY(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+/*** PRODUCTOS ***/
+.puff-in-center {
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/*** ABOUT ***/
+.tracking-in-expand-fwd {
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+/* MEDIA QUERIES PANTALLA ANCHA */
+@media (max-width: 1500px) {
+  #intro {
+    width: 90% !important;
+    margin: auto;
+  }
+  #hero {
+    width: 90% !important;
+  }
+  #main__prod {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .prod__fila1,
+  .prod__fila2,
+  .prod__fila3,
+  .prod__fila4 {
+    width: 100% !important;
+    text-align: center;
+  }
+  #local {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+  }
+  #img-mapa {
+    width: 100%;
+    height: auto;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__item1 video {
+    width: 100%;
+  }
+}
+/* MEDIA QUERIES PANTALLA SM */
+@media (max-width: 768px) {
+  #hero {
+    width: 90% !important;
+  }
+  #main__prod {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .prod__fila1,
+  .prod__fila2,
+  .prod__fila3,
+  .prod__fila4 {
+    width: 100% !important;
+    text-align: center;
+  }
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  #local {
+    flex-wrap: wrap;
+  }
+  #img-mapa {
+    width: 100%;
+    height: auto;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__item1 video {
+    width: 100%;
+  }
+}
+/* MEDIA QUERIES PANTALLA EXTRA SM*/
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .prod__fila1,
+  .prod__fila2,
+  .prod__fila3,
+  .prod__fila4 {
+    width: 100% !important;
+    text-align: center;
+  }
+  #local {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  #img-mapa {
+    width: 100%;
+    height: auto;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__item1 video {
+    width: 100%;
+  }
+}/*# sourceMappingURL=estilos.css.map */

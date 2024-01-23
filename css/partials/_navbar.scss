@@ -1,0 +1,14 @@
+@import 'variables';
+
+#menu__navbar {
+    a {
+        color: $primary-color;
+    }
+
+    a button {
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+
+
+}
