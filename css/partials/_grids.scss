@@ -4,40 +4,30 @@
     background-color: $primary-color;
     display: grid;
     padding: 6rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;   
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-        "item1 item2"
-        "item1 item3";
+      "item1 item2"
+      "item1 item3";
     gap: 2rem;
-
-}
-
-.grid__item {
-    color: white;
-}
-
-.grid__item1 {
-    grid-area: item1;
-    
-}
-
-.grid__item1 h4 {
-    text-align: center;
-}
-
-.grid__item2 {
-    grid-area: item2;
-}
-
-.grid__item2 h4 {
-    text-align: center;
-}
-
-.grid__item3 {
-    grid-area: item3;    
-}
-
-.grid__item3 h4 {
-    text-align: center;
-}
+  
+    &__item {
+      color: white;
+  
+      &1 {
+        grid-area: item1;
+      }
+  
+      &2 {
+        grid-area: item2;
+      }
+  
+      &3 {
+        grid-area: item3;
+      }
+  
+      h4 {
+        text-align: center;
+      }
+    }
+  }
