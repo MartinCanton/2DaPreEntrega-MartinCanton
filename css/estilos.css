@@ -42,38 +42,25 @@ footer p {
 .grid {
   background-color: #044726;
   display: grid;
-  padding: 6rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  padding: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "item1 item2" "item1 item3";
   gap: 2rem;
 }
-
 .grid__item {
   color: white;
 }
-
 .grid__item1 {
   grid-area: item1;
 }
-
-.grid__item1 h4 {
-  text-align: center;
-}
-
 .grid__item2 {
   grid-area: item2;
 }
-
-.grid__item2 h4 {
-  text-align: center;
-}
-
 .grid__item3 {
   grid-area: item3;
 }
-
-.grid__item3 h4 {
+.grid__item h4 {
   text-align: center;
 }
 
@@ -93,13 +80,13 @@ footer p {
   justify-content: center;
 }
 
-.mapa {
-  height: 500px;
+.wrapper-local {
+  justify-content: center;
 }
 
-.wrapper-local {
-  width: 50%;
-  margin-left: 100px;
+#img-mapa {
+  width: 100%;
+  height: auto;
 }
 
 /*** INDEX ***/
@@ -153,7 +140,7 @@ footer p {
   }
 }
 /* MEDIA QUERIES PANTALLA ANCHA */
-@media (max-width: 1500px) {
+@media (max-width: 1900px) {
   #intro {
     width: 90% !important;
     margin: auto;
@@ -188,6 +175,7 @@ footer p {
   .grid {
     display: flex;
     flex-direction: column;
+    padding: 3rem;
   }
   .grid__item1 video {
     width: 100%;
@@ -224,6 +212,7 @@ footer p {
   .grid {
     display: flex;
     flex-direction: column;
+    padding: 3rem;
   }
   .grid__item1 video {
     width: 100%;
@@ -254,6 +243,7 @@ footer p {
   .grid {
     display: flex;
     flex-direction: column;
+    padding: 3rem;
   }
   .grid__item1 video {
     width: 100%;
