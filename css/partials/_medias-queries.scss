@@ -1,7 +1,7 @@
 @import 'variables';
 
 /* MEDIA QUERIES PANTALLA ANCHA */
-@media (max-width: 1900px) {
+@media (max-width: 1400px) {
     #intro {
         width: 90% !important;
         margin: auto;
@@ -24,6 +24,19 @@
         text-align: center;
     }
 
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .grid__item1 video {
+        width: 100%;
+    }
+}    
+
+@media (max-width: 1900px) {
     #local {
         flex-wrap: wrap;
         width: 100%;
@@ -38,16 +51,7 @@
         width:100%;
         height:auto;
     }
-
-    .grid {
-        display: flex;
-        flex-direction: column;
-        padding: 3rem;
-    }
-
-    .grid__item1 video {
-        width: 100%;
-    } 
+ 
 }
 
 /* MEDIA QUERIES PANTALLA SM */
