@@ -5,6 +5,7 @@
     background-color: $primary-color;
     display:flex;
     justify-content: center;  
+    gap: 3rem;
 }
 
 .wrapper-local {
@@ -13,4 +14,5 @@
 
 #img-mapa {
     height: auto;    
+    padding-bottom: 2rem;
 }

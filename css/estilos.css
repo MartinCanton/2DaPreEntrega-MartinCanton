@@ -78,6 +78,7 @@ footer p {
   background-color: #044726;
   display: flex;
   justify-content: center;
+  gap: 3rem;
 }
 
 .wrapper-local {
@@ -86,6 +87,7 @@ footer p {
 
 #img-mapa {
   height: auto;
+  padding-bottom: 2rem;
 }
 
 /*** INDEX ***/
